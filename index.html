@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Модель візуального форматування — демо</title>
+    
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' https: data: blob:;
+                 img-src 'self' https: data:;
+                 media-src 'self' https: data: blob:;
+                 style-src 'self' 'unsafe-inline';
+                 script-src 'self'">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="page">
+    <section class="card">
+        <h1>👋 Модель візуального форматування (PWA-шаблон)</h1>
+        <p class="lead">
+            Це демо-сторінка для перевірки списків, таблиць і медіа
+            (зображення, відео, аудіо, анімація).
+        </p>
+
+        <h2>1. Організація списків у PWA-шаблоні</h2>
+
+        <h3>Ненумерований список:</h3>
+        <ul>
+            <li>Головна сторінка</li>
+            <li>Мій профіль</li>
+            <li>Налаштування</li>
+        </ul>
+
+        <h3>Нумерований список:</h3>
+        <ol>
+            <li>Завантажити застосунок</li>
+            <li>Установити його</li>
+            <li>Запустити та користуватися</li>
+        </ol>
+
+        <h3>Вкладений список:</h3>
+        <ul>
+            <li>Мови інтерфейсу:
+                <ul>
+                    <li>Українська</li>
+                    <li>Англійська</li>
+                    <li>Польська</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>2. Використання таблиць у PWA-шаблоні</h2>
+
+        <div class="table-wrap">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Назва проєкту</th>
+                    <th>Технологія</th>
+                    <th>Статус</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Перший додаток</td>
+                    <td>HTML/CSS</td>
+                    <td>Готово</td>
+                </tr>
+                <tr>
+                    <td>Візуальне демо</td>
+                    <td>WebStorm + Safari</td>
+                    <td>В процесі</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>3. Графіка, анімація, відео і звук у PWA-шаблоні</h2>
+
+        <figure class="media">
+            <img src="https://picsum.photos/1000/360" alt="Демонстраційне зображення" />
+            <figcaption>Зображення (HTTPS-джерело)</figcaption>
+        </figure>
+
+        <figure class="media">
+            <video controls preload="metadata">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                Ваш браузер не підтримує відео.
+            </video>
+            <figcaption>Відео (MP4, HTTPS-джерело)</figcaption>
+        </figure>
+
+        <figure class="media">
+            <audio controls preload="metadata">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+                Ваш браузер не підтримує аудіо.
+            </audio>
+            <figcaption>Аудіо (MP3, HTTPS-джерело)</figcaption>
+        </figure>
+
+        <figure class="media">
+            <img class="gif"
+                 src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnl6Z2t2dGp4cXlyc3YyNDd3MXJ4NTd0dm1ucnVhbjh0cHJ3ajdxayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vFKqnCdLPNOKc/giphy.gif"
+                 alt="GIF-анімація" />
+            <figcaption>GIF-анімація (HTTPS-джерело)</figcaption>
+        </figure>
+
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "Visual formatting model demo in Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Sadova21",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "latest"
+  }
+}
+
